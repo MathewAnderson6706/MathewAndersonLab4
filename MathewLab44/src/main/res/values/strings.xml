@@ -8,4 +8,7 @@
     <string name="second_screen_txt">My Second Screen Mathew Anderson n01436706</string>
     <string name="initial">initial text</string>
     <string name="number">Number: </string>
+    <string name="dial">Dial</string>
+    <string name="exit">EXIT</string>
+    <string name="help">Help</string>
 </resources>

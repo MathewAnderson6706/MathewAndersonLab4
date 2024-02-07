@@ -1,6 +1,7 @@
 package mathew.anderson.n01436706;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,6 +16,9 @@ public class MathewActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mathew2);
+
+        Toolbar toolbar = findViewById(R.id.theToolbar);
+        setSupportActionBar(toolbar);
 
         textview = findViewById(R.id.txtView2);
         Intent intent = getIntent();
