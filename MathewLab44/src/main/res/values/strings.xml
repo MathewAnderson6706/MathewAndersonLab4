@@ -1,4 +1,8 @@
 <!--Mathew Anderson, n01436706 -->
 <resources>
     <string name="app_name">MathewAndersonn01436706</string>
+    <string name="welcome">Welcome Mathew Anderson n01436706</string>
+    <string name="btn">Button</string>
+    <string name="snk">Mathew Anderson</string>
+    <string name="start">START</string>
 </resources>
