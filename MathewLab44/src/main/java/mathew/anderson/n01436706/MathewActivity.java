@@ -1,25 +1,18 @@
 //Mathew Anderson, n01436706
 package mathew.anderson.n01436706;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.Toast;
-import android.net.Uri;
 
 import com.google.android.material.snackbar.Snackbar;
 
-public class MathewActivity extends AppCompatActivity {
+public class MathewActivity extends MenuClass {
 
     String tag = "Assignment";
 
@@ -28,39 +21,6 @@ public class MathewActivity extends AppCompatActivity {
         super.onResume();
         Log.d(tag, "Mathew Anderson-Saavedra, n01436706");
     }
-
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.action_dial) {
-
-            Intent dialIntent = new Intent(Intent.ACTION_DIAL);
-            dialIntent.setData(Uri.parse("tel:123456789"));
-            startActivity(dialIntent);
-        }
-
-        if (item.getItemId() == R.id.action_exit) {
-
-            finishAffinity();
-        }
-
-        if (item.getItemId() == R.id.action_help) {
-
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://google.com"));
-            startActivity(browserIntent);
-        }
-
-        return false;
-    }
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,6 +1,6 @@
 package mathew.anderson.n01436706;
 
-import androidx.appcompat.app.AppCompatActivity;
+
 import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 
-public class MathewActivity2 extends AppCompatActivity {
+public class MathewActivity2 extends MenuClass {
 
     TextView textview;
 
@@ -23,7 +23,8 @@ public class MathewActivity2 extends AppCompatActivity {
         textview = findViewById(R.id.txtView2);
         Intent intent = getIntent();
         long num = intent.getLongExtra("key", 0);
-        String text = "Number: " + num;
+        String number = getString(R.string.number);
+        String text = number + num;
         textview.setText(text);
     }
 }
