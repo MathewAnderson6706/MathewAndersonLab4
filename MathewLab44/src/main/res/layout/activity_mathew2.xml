@@ -7,6 +7,13 @@
     tools:context=".MathewActivity2"
     android:background="@color/yellow">
 
+    <include
+        android:id="@+id/theToolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/txtView"
         android:layout_width="wrap_content"
