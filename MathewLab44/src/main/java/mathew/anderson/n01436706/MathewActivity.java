@@ -14,13 +14,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class MathewActivity extends MenuClass {
 
-    String tag = "Assignment";
 
-    public void onResume()
-    {
-        super.onResume();
-        Log.d(tag, "Mathew Anderson-Saavedra, n01436706");
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

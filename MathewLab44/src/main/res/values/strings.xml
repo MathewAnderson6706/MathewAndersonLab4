@@ -11,4 +11,5 @@
     <string name="dial">Dial</string>
     <string name="exit">EXIT</string>
     <string name="help">Help</string>
+    <string name="numbers_only">numbers only</string>
 </resources>

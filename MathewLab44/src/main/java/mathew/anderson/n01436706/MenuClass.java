@@ -1,7 +1,9 @@
+//Mathew Anderson, n01436706
 package mathew.anderson.n01436706;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -9,6 +11,15 @@ import android.view.MenuItem;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MenuClass extends AppCompatActivity {
+
+
+    String tag = "Assignment";
+
+    public void onResume()
+    {
+        super.onResume();
+        Log.d(tag, "Mathew Anderson-Saavedra, n01436706");
+    }
 
 
     @Override
